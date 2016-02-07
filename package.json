@@ -7,9 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*.@(js|jsx)\"",
     "build": "webpack -d",
     "start": "webpack-dev-server"
+  },
+  "babel":  {
+    "presets": ["react", "es2015"]
   },
   "repository": {
     "type": "git",
