@@ -17,6 +17,16 @@ describe ('Testing Reducer function', () => {
    expect(nextState.products.length).to.equal(2)
   })
 
+  it ('doesn\`t add products if incorrect', () => {
+    const action = {type: 'ADD_PRODUCT',
+                    data: [
+                      {id:1, price:1}, 
+                      {name:'B', id:2, price:2}
+                    ]}
+   const nextState = reducer(initialState, action)
+   expect(nextState.products.length).to.equal(1)
+  })
+
   it('handles select products', () =>  {
    const action = {type: 'SELECT_PRODUCT',
                    data: {name: 'handlebars', id: 1, price: 2}}
@@ -42,3 +52,5 @@ describe ('Testing Reducer function', () => {
   })
 
 })
+
+
