@@ -1,2 +1,2 @@
-var state = {products: [],
+const initialState = {products: [],
              cart: {user, item}}
