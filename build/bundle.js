@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f1566b6e7e67d4cc9216"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "53375b90bd2bb989d98f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -20739,7 +20739,7 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      _react3.default.createElement(_heading2.default, null);
+	      return _react3.default.createElement(_heading2.default, null);
 	    }
 	  }]);
 	
@@ -23990,10 +23990,6 @@
 	  value: true
 	});
 	
-	var _heading = __webpack_require__(/*! ./heading.jsx */ 211);
-	
-	var _heading2 = _interopRequireDefault(_heading);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24003,8 +23999,8 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var _components = {
-	  App: {
-	    displayName: 'App'
+	  Heading: {
+	    displayName: 'Heading'
 	  }
 	};
 	
@@ -24028,30 +24024,30 @@
 	  };
 	}
 	
-	var App = _wrapComponent('App')(function (_Component) {
-	  _inherits(App, _Component);
+	var Heading = _wrapComponent('Heading')(function (_Component) {
+	  _inherits(Heading, _Component);
 	
-	  function App(props) {
-	    _classCallCheck(this, App);
+	  function Heading(props) {
+	    _classCallCheck(this, Heading);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this, props));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Heading).call(this, props));
 	  }
 	
-	  _createClass(App, [{
+	  _createClass(Heading, [{
 	    key: 'render',
 	    value: function render() {
-	      _react3.default.createElement(
+	      return _react3.default.createElement(
 	        'h1',
 	        null,
-	        'Hello World '
+	        'Hello World'
 	      );
 	    }
 	  }]);
 	
-	  return App;
+	  return Heading;
 	}(_react2.Component));
-
-	exports.default = _heading2.default;
+	
+	exports.default = Heading;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../~/webpack/buildin/module.js */ 160)(module)))
 
 /***/ }
